@@ -15,13 +15,13 @@ namespace Tyuiu.YarkovSD.Sprint5.Task3.V23.Lib
             bool fileExists = fileInfo.Exists;
             if (fileExists) File.Delete(path);
 
-            double r = Math.Round(Math.Pow(1 - x, 2) / (-3 * x), 3);
+            double r = Math.Round((1 + Math.Pow(x, 3)) / Math.Pow(x, 2), 3);
 
             using (BinaryWriter writer = new(File.Open(path, FileMode.Append)))
             {
                 writer.Write(r);
             }
-            return "F9nO91PjCEA=";
+            return path;
         }
     }
 }
