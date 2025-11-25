@@ -1,4 +1,5 @@
-﻿using tyuiu.cources.programming.interfaces.Sprint5;
+﻿using System;
+using tyuiu.cources.programming.interfaces.Sprint5;
 
 namespace Tyuiu.YarkovSD.Sprint5.Task1.V23.Lib
 {
