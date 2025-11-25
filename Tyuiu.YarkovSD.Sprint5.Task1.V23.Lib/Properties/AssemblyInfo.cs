@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набора атрибутов. Измените значения этих атрибутов для изменения сведений,
 // связанные со сборкой.
-[assembly: AssemblyTitle("Tyuiu.YarkovSD.Sprint5.Task1.V23.Libb")]
+[assembly: AssemblyTitle("Tyuiu.YarkovSD.Sprint5.Task1.V23.Lib")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Tyuiu.YarkovSD.Sprint5.Task1.V23.Libb")]
+[assembly: AssemblyProduct("Tyuiu.YarkovSD.Sprint5.Task1.V23.Lib")]
 [assembly: AssemblyCopyright("Copyright ©  2025")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID служит для идентификации библиотеки типов, если этот проект будет видимым для COM
-[assembly: Guid("24a8c65b-dd81-4b1a-a157-c9fa19cec603")]
+[assembly: Guid("ef85a66d-cf8c-4371-b5fb-0207266bcac6")]
 
 // Сведения о версии сборки состоят из указанных ниже четырех значений:
 //
