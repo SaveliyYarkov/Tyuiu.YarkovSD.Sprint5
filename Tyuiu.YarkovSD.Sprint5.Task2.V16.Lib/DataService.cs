@@ -1,4 +1,5 @@
 ﻿using System.Runtime.ExceptionServices;
+using System.Xml;
 using tyuiu.cources.programming.interfaces.Sprint5;
 
 namespace Tyuiu.YarkovSD.Sprint5.Task2.V16.Lib
@@ -17,13 +18,17 @@ namespace Tyuiu.YarkovSD.Sprint5.Task2.V16.Lib
                         matrix[i, j] = 1;
                     else
                         matrix[i, j] = 0;
-
-                    if (j != matrix.GetLength(1) - 1) a += ";";
-                    else if (i != matrix.GetLength(0) - 1) a += Environment.NewLine;
                 }
             }
-
-            return a;
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    a += (matrix[i, j] + " ");
+                }
+                a += Environment.NewLine;
+            }
+         return a;
         }
     }
 }
