@@ -1,4 +1,5 @@
-﻿
+﻿using System;
+using System.IO;
 using tyuiu.cources.programming.interfaces.Sprint5;
 
 namespace Tyuiu.YarkovSD.Sprint5.Task3.V23.Lib
@@ -7,17 +8,18 @@ namespace Tyuiu.YarkovSD.Sprint5.Task3.V23.Lib
     {
         public string SaveToFileTextData(int x)
         {
-            string outputFile = "OutPutFileTask3.bin";
 
+            string outputFile = "OutPutFileTask3.bin";
             string path = Path.Combine(Path.GetTempPath(), outputFile);
 
-            FileInfo fileInfo = new(path);
-            bool fileExists = fileInfo.Exists;
-            if (fileExists) File.Delete(path);
+            FileInfo fileInfo = new FileInfo(path);
+            if (fileInfo.Exists)
+                File.Delete(path);
 
-            double r = Math.Round((1 + Math.Pow(x, 3)) / Math.Pow(x, 2));
+            double result = (1 + Math.Pow(x, 3)) / x;
+            double r = Math.Round(result, 3);
 
-            using (BinaryWriter writer = new(File.Open(path, FileMode.Append)))
+            using (BinaryWriter writer = new BinaryWriter(File.Open(path, FileMode.Create)))
             {
                 writer.Write(r);
             }
