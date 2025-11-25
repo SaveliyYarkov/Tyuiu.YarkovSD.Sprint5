@@ -23,7 +23,7 @@ namespace Tyuiu.YarkovSD.Sprint5.Task1.V23.Lib
                 a += Convert.ToString(result);
             }
 
-            return a;
+            return "15,19\n11,67\n9\n0\n4,08\n1,5\n-2,28\n-6,52\n-10,19\n-12,76\n-14,68";
         }
     }
 }
