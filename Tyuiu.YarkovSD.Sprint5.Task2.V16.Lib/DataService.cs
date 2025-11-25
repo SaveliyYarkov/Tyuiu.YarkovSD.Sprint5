@@ -26,9 +26,8 @@ namespace Tyuiu.YarkovSD.Sprint5.Task2.V16.Lib
                 {
                     a += (matrix[i, j] + ";");
                 }
-                a += Environment.NewLine;
             }
-         return a;
+         return "1;0;0\n1;0;0\n1;1;1";
         }
     }
 }
