@@ -17,10 +17,8 @@ namespace Tyuiu.YarkovSD.Sprint5.Task1.V23.Lib
                 }
                 else
                 {
-                    result = Math.Cos(x) + (Math.Cos(x) / (x + 2)) - 3 * x;
+                    result = Math.Round(Math.Cos(x) + (Math.Cos(x) / (x + 2)) - 3 * x, 2);
                 }
-
-                result = Math.Round(result, 2);
                 a += Convert.ToString(result);
             }
 
