@@ -24,7 +24,7 @@ namespace Tyuiu.YarkovSD.Sprint5.Task2.V16.Lib
             {
                 for (int j = 0; j < 3; j++)
                 {
-                    a += (matrix[i, j] + " ");
+                    a += (matrix[i, j] + ";");
                 }
                 a += Environment.NewLine;
             }
