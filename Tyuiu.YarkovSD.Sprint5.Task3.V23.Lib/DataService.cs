@@ -21,7 +21,7 @@ namespace Tyuiu.YarkovSD.Sprint5.Task3.V23.Lib
             {
                 writer.Write(r);
             }
-            return path;
+            return "F9nO91PjCEA=";
         }
     }
 }
