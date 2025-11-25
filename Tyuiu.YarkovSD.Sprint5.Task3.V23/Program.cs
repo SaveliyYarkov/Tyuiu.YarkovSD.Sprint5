@@ -1,2 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using Tyuiu.YarkovSD.Sprint5.Task3.V23.Lib;
+
+DataService ds = new DataService();
+ds.SaveToFileTextData(3);
